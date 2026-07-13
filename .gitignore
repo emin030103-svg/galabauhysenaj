@@ -1,0 +1,9 @@
+config/local.php
+*.log
+/work/
+/uploads-private/*
+!/uploads-private/.gitkeep
+/outputs/*.zip
+/outputs/screenshots/
+.DS_Store
+Thumbs.db
