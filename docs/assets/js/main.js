@@ -1,26 +1,42 @@
 const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.main-nav, .site-nav');
+const nav = document.querySelector('.main-nav');
 
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    nav.classList.toggle('open', !open);
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    nav.classList.toggle('open', !isOpen);
   });
 }
 
-document.querySelectorAll('[data-filter]').forEach((button) => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter || 'all';
-    document.querySelectorAll('[data-filter]').forEach((item) => item.classList.toggle('active', item === button));
-    document.querySelectorAll('[data-category]').forEach((item) => {
-      item.classList.toggle('is-hidden', filter !== 'all' && item.dataset.category !== filter);
+document.querySelectorAll('.gallery-system').forEach((gallery) => {
+  const buttons = Array.from(gallery.querySelectorAll('[data-filter]'));
+  const cards = Array.from(gallery.querySelectorAll('[data-gallery-card]'));
+  const status = gallery.querySelector('[data-filter-status]');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter || 'all';
+      buttons.forEach((item) => item.classList.toggle('active', item === button));
+      let visible = 0;
+      cards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('is-hidden', !match);
+        if (match) visible += 1;
+      });
+      if (status) {
+        const label = button.textContent.trim();
+        status.textContent = filter === 'all'
+          ? 'Alle Referenzen werden angezeigt.'
+          : `${visible} Referenz${visible === 1 ? '' : 'en'} für ${label}.`;
+      }
     });
   });
 });
 
-const lightboxLinks = Array.from(document.querySelectorAll('[data-lightbox]'));
-if (lightboxLinks.length) {
+const allLightboxLinks = Array.from(document.querySelectorAll('[data-lightbox]'));
+if (allLightboxLinks.length) {
+  let currentLinks = allLightboxLinks;
   let currentIndex = 0;
   const box = document.createElement('div');
   box.className = 'lightbox';
@@ -28,28 +44,37 @@ if (lightboxLinks.length) {
   box.setAttribute('aria-modal', 'true');
   box.innerHTML = '<button class="lightbox-close" type="button" aria-label="Lightbox schließen">×</button><button class="lightbox-prev" type="button" aria-label="Vorheriges Bild">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lightbox-next" type="button" aria-label="Nächstes Bild">›</button>';
   document.body.appendChild(box);
+
   const image = box.querySelector('img');
   const caption = box.querySelector('figcaption');
-  const close = box.querySelector('.lightbox-close');
+
+  const visibleCollectionFor = (link) => {
+    const gallery = link.closest('.gallery-system');
+    const links = gallery
+      ? Array.from(gallery.querySelectorAll('[data-lightbox]')).filter((item) => !item.classList.contains('is-hidden'))
+      : allLightboxLinks;
+    return links.length ? links : [link];
+  };
 
   const show = (index) => {
-    currentIndex = (index + lightboxLinks.length) % lightboxLinks.length;
-    const link = lightboxLinks[currentIndex];
+    currentIndex = (index + currentLinks.length) % currentLinks.length;
+    const link = currentLinks[currentIndex];
     image.src = link.getAttribute('href');
     image.alt = link.querySelector('img')?.alt || 'Projektbild';
     caption.textContent = link.dataset.caption || link.querySelector('span')?.textContent || '';
     box.classList.add('open');
   };
 
-  lightboxLinks.forEach((link, index) => {
+  allLightboxLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
-      show(index);
+      currentLinks = visibleCollectionFor(link);
+      show(currentLinks.indexOf(link));
     });
   });
 
   const closeBox = () => box.classList.remove('open');
-  close.addEventListener('click', closeBox);
+  box.querySelector('.lightbox-close').addEventListener('click', closeBox);
   box.querySelector('.lightbox-prev').addEventListener('click', () => show(currentIndex - 1));
   box.querySelector('.lightbox-next').addEventListener('click', () => show(currentIndex + 1));
   box.addEventListener('click', (event) => {
@@ -76,9 +101,4 @@ document.querySelectorAll('.map-consent [data-load-map]').forEach((button) => {
     iframe.allowFullscreen = true;
     wrapper.replaceChildren(iframe);
   });
-});
-
-document.querySelectorAll('input, textarea').forEach((field) => {
-  field.addEventListener('invalid', () => field.classList.add('touched'));
-  field.addEventListener('input', () => field.classList.remove('touched'));
 });
