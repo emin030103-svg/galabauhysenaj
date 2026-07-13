@@ -6,7 +6,7 @@ require __DIR__ . '/includes/header.php';
 ?>
 <main id="main">
     <section class="page-hero">
-      <div class="hero-media"><picture><source srcset="assets/images/abbrucharbeiten.webp" type="image/webp"><img src="assets/images/abbrucharbeiten.jpg" alt="Abbrucharbeiten" fetchpriority="high"></picture></div>
+      <div class="hero-media"><picture><source srcset="assets/images/abbrucharbeiten.webp" type="image/webp"><img src="assets/images/abbrucharbeiten.jpg" alt="Abbrucharbeiten" width="1600" height="2133" fetchpriority="high"></picture></div>
       <div class="container hero-panel">
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.php">Startseite</a><span>Abbrucharbeiten</span></nav>
         <p class="eyebrow">Leistungsdetail</p>
@@ -21,19 +21,19 @@ require __DIR__ . '/includes/header.php';
       </div>
     </section>
     <section class="section section-muted gallery-system"><div class="container section-head"><div><p class="eyebrow">Bilder</p><h2>Passende Eindrücke</h2></div></div><div class="container gallery-grid service-gallery"><a class="gallery-item" href="assets/images/abbrucharbeiten.jpg" data-lightbox data-gallery-card data-category="erdarbeiten" data-caption="Abbrucharbeiten - Projektbild">
-          <picture><source srcset="assets/images/abbrucharbeiten.webp" type="image/webp"><img src="assets/images/abbrucharbeiten.jpg" alt="Abbrucharbeiten" loading="lazy"></picture>
+          <picture><source srcset="assets/images/abbrucharbeiten.webp" type="image/webp"><img src="assets/images/abbrucharbeiten.jpg" alt="Abbrucharbeiten" width="1600" height="2133" loading="lazy"></picture>
           <span>Abbrucharbeiten - Projektbild</span>
         </a>
         <a class="gallery-item" href="assets/images/gartengestaltung.jpg" data-lightbox data-gallery-card data-category="gartengestaltung" data-caption="Passende Arbeit: Gartengestaltung">
-          <picture><source srcset="assets/images/gartengestaltung.webp" type="image/webp"><img src="assets/images/gartengestaltung.jpg" alt="Gartengestaltung" loading="lazy"></picture>
+          <picture><source srcset="assets/images/gartengestaltung.webp" type="image/webp"><img src="assets/images/gartengestaltung.jpg" alt="Gartengestaltung" width="1600" height="2585" loading="lazy"></picture>
           <span>Passende Arbeit: Gartengestaltung</span>
         </a>
         <a class="gallery-item" href="assets/images/pflasterarbeiten.jpg" data-lightbox data-gallery-card data-category="pflasterarbeiten" data-caption="Passende Arbeit: Pflasterarbeiten">
-          <picture><source srcset="assets/images/pflasterarbeiten.webp" type="image/webp"><img src="assets/images/pflasterarbeiten.jpg" alt="Pflasterarbeiten" loading="lazy"></picture>
+          <picture><source srcset="assets/images/pflasterarbeiten.webp" type="image/webp"><img src="assets/images/pflasterarbeiten.jpg" alt="Pflasterarbeiten" width="1600" height="1200" loading="lazy"></picture>
           <span>Passende Arbeit: Pflasterarbeiten</span>
         </a>
         <a class="gallery-item" href="assets/images/sichtschutz.jpg" data-lightbox data-gallery-card data-category="sichtschutz" data-caption="Passende Arbeit: Sichtschutz">
-          <picture><source srcset="assets/images/sichtschutz.webp" type="image/webp"><img src="assets/images/sichtschutz.jpg" alt="Sichtschutz" loading="lazy"></picture>
+          <picture><source srcset="assets/images/sichtschutz.webp" type="image/webp"><img src="assets/images/sichtschutz.jpg" alt="Sichtschutz" width="1600" height="2133" loading="lazy"></picture>
           <span>Passende Arbeit: Sichtschutz</span>
         </a></div></section>
     <section class="section process-section"><div class="container section-head centered"><p class="eyebrow">Ablauf</p><h2>Von der Anfrage bis zur Umsetzung</h2></div><div class="container process-grid"><article><span>1</span><h3>Beratung</h3><p>Wir klären Wünsche, Fläche und Rahmenbedingungen.</p></article><article><span>2</span><h3>Planung</h3><p>Material, Ablauf und Angebot werden nachvollziehbar abgestimmt.</p></article><article><span>3</span><h3>Umsetzung</h3><p>Unser Team führt die Arbeiten sauber und fachgerecht aus.</p></article></div></section>
@@ -42,7 +42,7 @@ require __DIR__ . '/includes/header.php';
     <section class="contact-cta">
       <div class="container contact-cta-grid">
         <div><p class="eyebrow">Kostenlose Erstberatung</p><h2>Planen wir Ihr Gartenprojekt gemeinsam.</h2><p>Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns persönlich zurück und beraten Sie in Heilbronn und Umgebung.</p></div>
-        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestraße 24<br>74072 Heilbronn</p><a class="btn btn-primary" href="kontakt.php">Kontakt aufnehmen</a></div>
+        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestraße 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Kontaktformular öffnen</a><a class="btn btn-light" href="tel:+4915155605621">Direkt anrufen</a></div></div>
       </div>
     </section>
 </main>

@@ -1,152 +1,50 @@
 # Hysenaj Galabau Webseite
 
-Neue Webseite für Hysenaj Galabau aus Heilbronn mit zwei Varianten im selben Repository:
+Vollständige lokale Neuumsetzung der Website für Hysenaj Galabau mit zwei Varianten:
 
-- `docs/`: statische Vorschau für GitHub Pages
-- Hauptverzeichnis: vollständige PHP-Version für IONOS
+- `docs/`: statische HTML-Version für GitHub Pages
+- Hauptverzeichnis: PHP-Version für IONOS-Webhosting
 
-## Struktur
+## Projektstruktur
 
-- `docs/index.html` Startseite für GitHub Pages
-- `docs/*.html` statische Unterseiten für GitHub Pages
-- `docs/assets/` statische CSS-, JS- und Bilddateien
-- `index.php` Startseite
-- `leistungen.php` Leistungsübersicht
-- `ueber-uns.php` Unternehmensseite
-- `galerie.php` Referenzen/Galerie
-- `faq.php` FAQ
-- `kontakt.php` Kontaktformular
-- `bewerbung.php` Bewerbungsformular mit Datei-Upload-Prüfung
-- `impressum.php` Anbieterkennzeichnung
-- `datenschutz.php` Datenschutzhinweise
-- `404.php` Fehlerseite
-- `includes/` gemeinsame PHP-Bausteine
-- `config/` zentrale Konfiguration
-- `assets/` CSS, JavaScript, Bilder
-
-## GitHub Pages
-
-GitHub Pages muss auf folgende Quelle zeigen:
-
-- Branch: `main`
-- Ordner: `/docs`
-
-Der Ordner `docs/` enthält eine eigene `index.html` und eine `.nojekyll`-Datei. Alle internen Links zeigen auf `.html`-Dateien, und alle Asset-Pfade sind relativ, zum Beispiel `assets/css/style.css`. Dadurch funktioniert die Vorschau auch unter dem Unterordner `/galabauhysenaj/`.
-
-Die Kontakt- und Bewerbungsformulare sind in der statischen Vorschau sichtbar. Da GitHub Pages kein PHP ausführt, zeigen sie dort eine Vorschau-Meldung. Die echte Verarbeitung erfolgt nur in der IONOS/PHP-Version.
+- `docs/index.html` ist die Startseite für GitHub Pages.
+- `docs/*.html` sind die statischen Unterseiten.
+- `index.php`, `leistungen.php`, `ueber-uns.php`, `galerie.php`, `faq.php`, `kontakt.php`, `bewerbung.php`, `impressum.php`, `datenschutz.php` bilden die PHP-Version.
+- `includes/` enthält Header, Footer, Daten und Funktionen.
+- `config/config.example.php` enthält die zentrale Formular-Konfiguration.
+- `assets/css/styles.css` ist die zentrale CSS-Datei.
+- `assets/js/main.js` enthält Navigation, Galerie, Lightbox, Karten-Zustimmung und statische Formularhinweise.
 
 ## Lokales Testen
 
-1. PHP 8.2 oder neuer installieren.
-2. Im Projektordner starten:
-   `php -S localhost:8080`
-3. Im Browser öffnen:
-   `http://localhost:8080`
+Statisch: `docs/index.html` im Browser öffnen oder im Projektordner `python -m http.server 4177` starten.
 
-Hinweis: Der Mailversand über `mail()` funktioniert lokal häufig nicht ohne zusätzliche Mail-Konfiguration. Auf IONOS muss das Kontaktformular nach dem Upload mit der echten Hosting-Umgebung getestet werden.
+PHP: PHP 8.2 oder neuer verwenden und im Projektordner `php -S localhost:8080` starten.
 
-## IONOS-Bereitstellung
+## GitHub Pages
 
-1. Repository herunterladen oder ZIP-Datei erstellen.
-2. Dateien lokal entpacken.
-3. `config/config.example.php` nach `config/config.php` kopieren, falls `config.php` nicht vorhanden ist.
-4. In `config/config.php` Domain, Empfängeradresse und Absenderadresse prüfen.
-5. Dateien per SFTP oder IONOS Webspace Explorer in das gewünschte Webverzeichnis hochladen.
-6. Domain im IONOS-Control-Center mit diesem Webverzeichnis verbinden.
-7. PHP 8.2 oder neuer aktivieren.
-8. Schreibrechte nur dort setzen, wo sie wirklich benötigt werden. Dauerhafte öffentliche Uploads werden nicht benötigt.
-9. Kontaktformular testen.
-10. Bewerbungsformular und Datei-Upload mit PDF/DOC/DOCX testen.
-11. HTTPS prüfen.
-12. HTTP-auf-HTTPS-Weiterleitung aktivieren oder die `.htaccess`-Regel nutzen, sofern Apache diese unterstützt.
-13. 404-Seite testen.
-14. `sitemap.xml` bei Suchmaschinen einreichen.
+GitHub Pages auf Branch `main` und Ordner `/docs` stellen. Die Datei `docs/.nojekyll` ist vorhanden. Innerhalb der statischen Version zeigen interne Links auf `.html`-Dateien und verwenden relative Pfade.
 
-## Externe Dienste, Cookies und Datenschutz
+## IONOS
 
-- Externe Dienste: keine aktiv eingebunden.
-- Externe Schriftarten: keine. Es werden Systemschriften genutzt.
-- Karten: keine Google-Maps- oder andere Karten-Einbindung.
-- Tracking: kein Analytics, kein Pixel, kein Tag Manager.
-- YouTube/Videos: keine Einbindung.
-- Cookies: keine zustimmungspflichtigen Cookies. PHP-Sessions werden nur für CSRF-Schutz der Formulare genutzt.
-- Formulardaten: Kontakt- und Bewerbungsdaten werden per E-Mail an `galabau.hysenaj@gmail.com` versendet.
-- Bewerbungsdateien: werden nicht dauerhaft öffentlich im Webverzeichnis gespeichert; sie werden als E-Mail-Anhang verarbeitet.
+Für IONOS die PHP-Dateien im Hauptverzeichnis hochladen. `config/config.example.php` nach Bedarf als Vorlage für `config/config.php` verwenden. Empfängeradresse: `galabau.hysenaj@gmail.com`.
 
 ## Übernommene Inhalte
 
-- Firmenname: Hysenaj Galabau.
-- Inhaber aus Impressum: Arben Hysenaj.
-- Anschrift: Mönchseestraße 24, 74072 Heilbronn, Deutschland.
-- Telefon für Kontaktseiten: +49 151 55605621.
-- Telefon aus Impressum: +49 174 3796682.
-- E-Mail-Adresse: galabau.hysenaj@gmail.com.
-- Gründung: 2009.
-- Öffnungszeiten: Montag bis Freitag 07:00-17:00 Uhr, Samstag 07:00-12:30 Uhr, Sonntag geschlossen.
-- Leistungen: Abbrucharbeiten, Erd- und Pflanzarbeiten, Gartengestaltung, Gartenpflege, Natursteinmauern, Pflasterarbeiten, Pool- und Teichbau, Sichtschutz, Terrassen.
-- FAQ-Inhalte zu Hauptsitz, Kosten, Leistungen, Werkzeugen/Maschinen und Subunternehmen.
-- Inhaltliche Aussagen der Über-uns-Seite zu Kundenzufriedenheit, pünktlichen/sachkundigen Teammitgliedern und hochwertiger Dienstleistung.
-- Bewerbungsseite mit Aussage zur Arbeit im Garten- und Landschaftsbau sowie Formularfeldern.
-- Impressumsdaten einschließlich Umsatzsteuer-Identifikationsnummer.
-
-## Sprachliche Korrekturen
-
-- `Mönchseestrasse` wurde im sichtbaren Text zu `Mönchseestraße` vereinheitlicht.
-- Tippfehler und Trennfehler wie `Gartengesta l tung`, `Informatione n`, `Ihn en` und `Ihne` wurden korrigiert.
-- Umgangssprachliche FAQ-Formulierungen wie `Welche Leistungen bietet Ihr an?` wurden zu einer professionellen Sie-Ansprache geändert.
-- Kontakt- und Bewerbungstexte wurden klarer, sachlicher und hochwertiger formuliert.
-- Wix-spezifische Datenschutzformulierungen zu Mobile-App, Tracking-Technologien, internationalen Wix-Speicherorten und Werbediensten wurden entfernt, da sie zur neuen Webseite nicht passen.
+Übernommen beziehungsweise inhaltlich modernisiert wurden Firmenname, Inhaber Arben Hysenaj, Anschrift Mönchseestraße/Mönchseestrasse 24, 74072 Heilbronn, Telefonnummern, E-Mail-Adresse, Öffnungszeiten, Gründungsjahr 2009, Leistungen, FAQ-Grundinhalte, Bewerbungsformularfelder, Impressumsdaten und vorhandene lokale Unternehmensbilder.
 
 ## Bilder
 
-Lokal übernommen und optimiert:
+Verwendet werden ausschließlich die lokal vorhandenen Bilder unter `assets/images/` inklusive WebP-Versionen. Keine dauerhaften Wix-Hotlinks sind eingebunden. Weitere nicht eindeutig als Unternehmensreferenzen nutzbare Stock-/Wix-Kontextbilder wurden nicht als Referenzen übernommen.
 
-- `assets/images/logo-hysenaj-galabau.*`
-- `assets/images/abbrucharbeiten.*`
-- `assets/images/erd-und-pflanzarbeiten.*`
-- `assets/images/gartengestaltung.*`
-- `assets/images/gartenpflege.*`
-- `assets/images/natursteinmauern.*`
-- `assets/images/pflasterarbeiten.*`
-- `assets/images/pool-und-teichbau.*`
-- `assets/images/sichtschutz.*`
-- `assets/images/terrassen.*`
+## Sprachliche und technische Änderungen
 
-Für jedes Bild gibt es JPG- und WebP-Versionen. Es wurden nur Bilder übernommen, die aus der öffentlichen bestehenden Unternehmenswebseite extrahiert werden konnten.
+Texte wurden professioneller formuliert, Tippfehler korrigiert und in eine einheitliche Sie-Ansprache gebracht. Die Website nutzt semantisches HTML, Vanilla JavaScript, ein zentrales CSS-System, responsive Navigation, Lightbox, Galerie-Filter, statische Formularhinweise und PHP-Formularverarbeitung.
 
-## Fehlende oder nicht herunterladbare Bilder
+## Rechtliche Hinweise
 
-Keine der neun Leistungsbilder und das Logo waren fehlend. Die alte Startseite enthielt zusätzlich Hintergrund-/Stockbilder aus Wix/Unsplash-Kontext. Diese wurden nicht als Unternehmensreferenzen übernommen, um keine fremden Referenzprojekte zu suggerieren.
+Impressum und Datenschutzerklärung wurden aus den vorhandenen Angaben abgeleitet und an die neue technische Umsetzung angepasst. Vor Veröffentlichung müssen beide Texte fachlich/rechtlich durch den Betreiber geprüft werden.
 
-## Rechtliche Punkte vor Veröffentlichung
+## Externe Dienste
 
-- Impressum durch eine fachkundige Stelle prüfen lassen, insbesondere Telefonnummern, Umsatzsteuerangabe und Bildrechte.
-- Datenschutztext an die finale IONOS-, Mail- und Serverlog-Konfiguration anpassen.
-- Prüfen, ob der Versand von Bewerbungsanhängen per E-Mail den internen Datenschutzanforderungen genügt. Für produktive Nutzung kann SMTP/PHPMailer mit TLS sinnvoll sein.
-- Prüfen, ob zusätzliche Pflichtangaben für das konkrete Unternehmen erforderlich sind.
-
-## Sicherheit
-
-- CSRF-Schutz für Kontakt- und Bewerbungsformular.
-- Honeypot-Spamschutz.
-- Mindestabsendezeit gegen einfache Bots.
-- Serverseitige Validierung und Header-Injection-Schutz.
-- Upload-Prüfung nach Dateiendung, MIME-Typ und maximal 5 MB.
-- Sicherheitsheader in PHP und `.htaccess`.
-- Verzeichnisauflistung deaktiviert.
-- Keine Zugangsdaten im Repository.
-
-## Qualitätssicherung
-
-Vor dem Livegang erneut prüfen:
-
-- Alle Links und Navigation.
-- Mobile Navigation.
-- Pflichtfelder, Fehlermeldungen und Erfolgsmeldungen.
-- E-Mail-Versand auf IONOS.
-- Bewerbungs-Upload auf IONOS.
-- HTTPS und HTTP-Weiterleitung.
-- 404-Seite.
-- `robots.txt` und `sitemap.xml`.
-- Impressum und Datenschutz.
-- Darstellung auf Smartphone, Tablet und Desktop.
+Keine Analytics- oder Tracking-Dienste. Die Kontaktseite nutzt eine Zwei-Klick-Kartenlösung: externe Karteninhalte werden erst nach Klick geladen. PHP-Sessions dienen dem CSRF-Schutz.

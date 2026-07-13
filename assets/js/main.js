@@ -102,3 +102,11 @@ document.querySelectorAll('.map-consent [data-load-map]').forEach((button) => {
     wrapper.replaceChildren(iframe);
   });
 });
+
+document.querySelectorAll('[data-static-form]').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const preview = form.querySelector('[data-form-preview]');
+    if (preview) preview.hidden = false;
+  });
+});

@@ -19,6 +19,7 @@
         <a href="leistungen.php">Leistungen</a>
         <a href="galerie.php">Referenzen</a>
         <a href="ueber-uns.php">Über uns</a>
+        <a href="faq.php">FAQ</a>
         <a href="bewerbung.php">Karriere</a>
         <a href="kontakt.php">Kontakt</a>
       </div>
@@ -41,7 +42,7 @@
   </footer>
   <nav class="mobile-actionbar" aria-label="Schnellkontakt">
     <a href="tel:+4915155605621">Anrufen</a>
-    <a href="kontakt.php">Anfragen</a>
+    <a href="kontakt.php">Anfrage senden</a>
   </nav>
   <script src="assets/js/main.js" defer></script>
 </body>

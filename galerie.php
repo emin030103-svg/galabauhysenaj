@@ -6,7 +6,7 @@ require __DIR__ . '/includes/header.php';
 ?>
 <main id="main">
     <section class="page-hero">
-      <div class="hero-media"><picture><source srcset="assets/images/natursteinmauern.webp" type="image/webp"><img src="assets/images/natursteinmauern.jpg" alt="Referenzen" fetchpriority="high"></picture></div>
+      <div class="hero-media"><picture><source srcset="assets/images/natursteinmauern.webp" type="image/webp"><img src="assets/images/natursteinmauern.jpg" alt="Referenzen" width="1600" height="1200" fetchpriority="high"></picture></div>
       <div class="container hero-panel">
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.php">Startseite</a><span>Referenzen</span></nav>
         <p class="eyebrow">Galerie</p>
@@ -29,39 +29,39 @@ require __DIR__ . '/includes/header.php';
       </div>
       <p class="container filter-status" data-filter-status>Alle Referenzen werden angezeigt.</p>
       <div class="container gallery-grid gallery-filter-grid"><a class="gallery-item" href="assets/images/gartengestaltung.jpg" data-lightbox data-gallery-card data-category="gartengestaltung" data-caption="Gartengestaltung in Heilbronn">
-          <picture><source srcset="assets/images/gartengestaltung.webp" type="image/webp"><img src="assets/images/gartengestaltung.jpg" alt="Individuelle Gartengestaltung" loading="lazy"></picture>
+          <picture><source srcset="assets/images/gartengestaltung.webp" type="image/webp"><img src="assets/images/gartengestaltung.jpg" alt="Individuelle Gartengestaltung" width="1600" height="2585" loading="lazy"></picture>
           <span>Gartengestaltung in Heilbronn</span>
         </a>
         <a class="gallery-item" href="assets/images/pflasterarbeiten.jpg" data-lightbox data-gallery-card data-category="pflasterarbeiten" data-caption="Pflasterarbeiten für Wege und Einfahrten">
-          <picture><source srcset="assets/images/pflasterarbeiten.webp" type="image/webp"><img src="assets/images/pflasterarbeiten.jpg" alt="Pflasterarbeiten" loading="lazy"></picture>
+          <picture><source srcset="assets/images/pflasterarbeiten.webp" type="image/webp"><img src="assets/images/pflasterarbeiten.jpg" alt="Pflasterarbeiten" width="1600" height="1200" loading="lazy"></picture>
           <span>Pflasterarbeiten für Wege und Einfahrten</span>
         </a>
         <a class="gallery-item" href="assets/images/terrassen.jpg" data-lightbox data-gallery-card data-category="terrassen" data-caption="Terrassengestaltung im Außenbereich">
-          <picture><source srcset="assets/images/terrassen.webp" type="image/webp"><img src="assets/images/terrassen.jpg" alt="Terrassen" loading="lazy"></picture>
+          <picture><source srcset="assets/images/terrassen.webp" type="image/webp"><img src="assets/images/terrassen.jpg" alt="Terrassen" width="1600" height="2133" loading="lazy"></picture>
           <span>Terrassengestaltung im Außenbereich</span>
         </a>
         <a class="gallery-item" href="assets/images/natursteinmauern.jpg" data-lightbox data-gallery-card data-category="naturstein" data-caption="Natursteinmauer und Einfassung">
-          <picture><source srcset="assets/images/natursteinmauern.webp" type="image/webp"><img src="assets/images/natursteinmauern.jpg" alt="Naturstein" loading="lazy"></picture>
+          <picture><source srcset="assets/images/natursteinmauern.webp" type="image/webp"><img src="assets/images/natursteinmauern.jpg" alt="Naturstein" width="1600" height="1200" loading="lazy"></picture>
           <span>Natursteinmauer und Einfassung</span>
         </a>
         <a class="gallery-item" href="assets/images/gartenpflege.jpg" data-lightbox data-gallery-card data-category="gartenpflege" data-caption="Gepflegte Gartenanlage">
-          <picture><source srcset="assets/images/gartenpflege.webp" type="image/webp"><img src="assets/images/gartenpflege.jpg" alt="Gartenpflege" loading="lazy"></picture>
+          <picture><source srcset="assets/images/gartenpflege.webp" type="image/webp"><img src="assets/images/gartenpflege.jpg" alt="Gartenpflege" width="1600" height="2133" loading="lazy"></picture>
           <span>Gepflegte Gartenanlage</span>
         </a>
         <a class="gallery-item" href="assets/images/pool-und-teichbau.jpg" data-lightbox data-gallery-card data-category="pool-und-teich" data-caption="Pool- und Teichbau im Garten">
-          <picture><source srcset="assets/images/pool-und-teichbau.webp" type="image/webp"><img src="assets/images/pool-und-teichbau.jpg" alt="Pool und Teich" loading="lazy"></picture>
+          <picture><source srcset="assets/images/pool-und-teichbau.webp" type="image/webp"><img src="assets/images/pool-und-teichbau.jpg" alt="Pool und Teich" width="1600" height="2133" loading="lazy"></picture>
           <span>Pool- und Teichbau im Garten</span>
         </a>
         <a class="gallery-item" href="assets/images/sichtschutz.jpg" data-lightbox data-gallery-card data-category="sichtschutz" data-caption="Sichtschutz für private Außenbereiche">
-          <picture><source srcset="assets/images/sichtschutz.webp" type="image/webp"><img src="assets/images/sichtschutz.jpg" alt="Sichtschutz" loading="lazy"></picture>
+          <picture><source srcset="assets/images/sichtschutz.webp" type="image/webp"><img src="assets/images/sichtschutz.jpg" alt="Sichtschutz" width="1600" height="2133" loading="lazy"></picture>
           <span>Sichtschutz für private Außenbereiche</span>
         </a>
         <a class="gallery-item" href="assets/images/erd-und-pflanzarbeiten.jpg" data-lightbox data-gallery-card data-category="erdarbeiten" data-caption="Erd- und Pflanzarbeiten">
-          <picture><source srcset="assets/images/erd-und-pflanzarbeiten.webp" type="image/webp"><img src="assets/images/erd-und-pflanzarbeiten.jpg" alt="Erdarbeiten" loading="lazy"></picture>
+          <picture><source srcset="assets/images/erd-und-pflanzarbeiten.webp" type="image/webp"><img src="assets/images/erd-und-pflanzarbeiten.jpg" alt="Erdarbeiten" width="1600" height="2133" loading="lazy"></picture>
           <span>Erd- und Pflanzarbeiten</span>
         </a>
         <a class="gallery-item" href="assets/images/abbrucharbeiten.jpg" data-lightbox data-gallery-card data-category="erdarbeiten" data-caption="Rückbau und Vorbereitung">
-          <picture><source srcset="assets/images/abbrucharbeiten.webp" type="image/webp"><img src="assets/images/abbrucharbeiten.jpg" alt="Abbrucharbeiten" loading="lazy"></picture>
+          <picture><source srcset="assets/images/abbrucharbeiten.webp" type="image/webp"><img src="assets/images/abbrucharbeiten.jpg" alt="Abbrucharbeiten" width="1600" height="2133" loading="lazy"></picture>
           <span>Rückbau und Vorbereitung</span>
         </a></div>
     </section>
