@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/includes/header.php'; ?>
-<main id="main">
+<main id="main"> 
     <section class="hero">
         <div class="hero-media"><?= image_picture('pflasterarbeiten', 'Hochwertig ausgeführte Pflasterarbeiten von Hysenaj Galabau', 'hero-img', false) ?></div>
         <div class="container hero-content">
