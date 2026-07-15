@@ -31,7 +31,7 @@ Für IONOS die PHP-Dateien im Hauptverzeichnis hochladen. `config/config.example
 
 ## Übernommene Inhalte
 
-Übernommen beziehungsweise inhaltlich modernisiert wurden Firmenname, Inhaber Arben Hysenaj, Anschrift Mönchseestraße/Mönchseestrasse 24, 74072 Heilbronn, Telefonnummern, E-Mail-Adresse, Öffnungszeiten, Gründungsjahr 2009, Leistungen, FAQ-Grundinhalte, Bewerbungsformularfelder, Impressumsdaten und vorhandene lokale Unternehmensbilder.
+Übernommen beziehungsweise inhaltlich modernisiert wurden Firmenname, Inhaber Arben Hysenaj, Anschrift Mönchseestrasse 24, 74072 Heilbronn, Telefonnummern, E-Mail-Adresse, Öffnungszeiten, Gründungsjahr 2009, Leistungen, FAQ-Grundinhalte, Bewerbungsformularfelder, Impressumsdaten und vorhandene lokale Unternehmensbilder.
 
 ## Bilder
 

@@ -209,3 +209,55 @@ label { display: grid; gap: 7px; margin-bottom: 16px; font-weight: 850; }
   .lightbox-next { right: 24px; }
   .contact-card .contact-phone, .detail-contact .contact-phone { font-size: 23px; }
 }
+
+/* Output-only refinements for contact and career pages */
+.contact-method-grid,
+.feature-grid,
+.dual-list-grid {
+  display: grid;
+  gap: 18px;
+}
+.contact-method-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.dual-list-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.info-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.info-card h2,
+.info-card h3 { margin-top: 0; }
+.info-card p { color: var(--muted); }
+.info-card .btn { margin-top: 10px; }
+.contact-value {
+  display: block;
+  color: var(--green);
+  font-weight: 900;
+  margin: 12px 0;
+  word-break: break-word;
+}
+.contact-form-layout { align-items: start; }
+select {
+  width: 100%;
+  border: 1px solid #d2cab9;
+  border-radius: 14px;
+  padding: 14px 15px;
+  background: var(--cream);
+  color: var(--ink);
+  font: inherit;
+}
+.route-only { align-items: center; }
+.route-card { min-height: 220px; display: grid; align-content: center; }
+.career-cta { margin-top: 0; }
+@media (max-width: 1040px) {
+  .contact-method-grid,
+  .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .contact-method-grid,
+  .feature-grid,
+  .dual-list-grid { grid-template-columns: 1fr; }
+  .info-card { padding: 20px; }
+}

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Natursteinmauern';
-$pageDescription = 'Robuste Mauern, Einfassungen und Gestaltungselemente aus Naturstein mit natürlicher Optik.';
+$pageDescription = 'Natürliche Mauern, Einfassungen und Hangelemente mit stabiler Ausführung.';
 $activePage = 'leistungen';
 require __DIR__ . '/includes/header.php';
 ?>
@@ -11,12 +11,12 @@ require __DIR__ . '/includes/header.php';
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.php">Startseite</a><span>Natursteinmauern</span></nav>
         <p class="eyebrow">Leistungsdetail</p>
         <h1>Natursteinmauern</h1>
-        <p>Robuste Mauern, Einfassungen und Gestaltungselemente aus Naturstein mit natürlicher Optik.</p>
+        <p>Natürliche Mauern, Einfassungen und Hangelemente mit stabiler Ausführung.</p>
       </div>
     </section>
     <section class="section">
       <div class="container detail-layout">
-        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Natursteinmauern von Hysenaj Galabau</h2><p>Naturstein bringt Struktur, Halt und Charakter in den Garten. Wir setzen Mauern und Einfassungen so um, dass sie technisch sinnvoll und gestalterisch passend in die Außenanlage eingebunden sind.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Natursteinmauern bauen</li><li>Einfassungen und Höhenabfangungen</li><li>Beet- und Wegebegrenzungen</li><li>Naturstein als Gestaltungselement</li><li>Anschluss an Pflaster- und Gartenflächen</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Hangbereiche</li><li>Beetkanten</li><li>Gartenstruktur</li><li>Sichtbare Gestaltungselemente</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Natürliche hochwertige Wirkung</li><li>Robuste Bauweise</li><li>Passend kombinierbar mit Pflaster und Pflanzen</li></ul></article>
+        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Natursteinmauern von Hysenaj Galabau</h2><p>Naturstein eignet sich für Einfassungen, Höhenunterschiede und sichtbare Gestaltungselemente. Hysenaj Galabau setzt Mauern und Begrenzungen so um, dass sie Halt geben und sich in Wege, Pflanzflächen und Terrassen einfügen.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Natursteinmauern bauen</li><li>Höhen abfangen</li><li>Beete und Wege einfassen</li><li>Naturstein in Gartenbereiche integrieren</li><li>Anschluss an Pflaster- und Grünflächen</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Hangbereiche</li><li>Beetkanten</li><li>Gartenstruktur</li><li>Sichtbare Gestaltungselemente</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Natürliche Optik</li><li>Stabile Abgrenzungen</li><li>Gute Kombination mit Pflaster und Pflanzen</li></ul></article>
         <aside class="detail-contact"><h2>Projekt besprechen</h2><p>Wir beraten Sie persönlich in Heilbronn und Umgebung.</p><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><a class="btn btn-primary" href="kontakt.php">Anfrage senden</a></aside>
       </div>
     </section>
@@ -41,8 +41,8 @@ require __DIR__ . '/includes/header.php';
     <section class="section section-muted"><div class="container service-nav"><a href="leistung-gartenpflege.php">← Gartenpflege</a><a href="leistungen.php">Alle Leistungen</a><a href="leistung-erd-und-pflanzarbeiten.php">Erd- und Pflanzarbeiten →</a></div><div class="container related-services"><h2>Ähnliche Leistungen</h2><div><a href="leistung-erd-und-pflanzarbeiten.php">Erd- und Pflanzarbeiten</a><a href="leistung-pool-und-teichbau.php">Pool- und Teichbau</a><a href="leistung-gartenpflege.php">Gartenpflege</a></div></div></section>
     <section class="contact-cta">
       <div class="container contact-cta-grid">
-        <div><p class="eyebrow">Kostenlose Erstberatung</p><h2>Planen wir Ihr Gartenprojekt gemeinsam.</h2><p>Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns persönlich zurück und beraten Sie in Heilbronn und Umgebung.</p></div>
-        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestraße 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Kontaktformular öffnen</a><a class="btn btn-light" href="tel:+4915155605621">Direkt anrufen</a></div></div>
+        <div><p class="eyebrow">Kontakt</p><h2>Sie planen ein Gartenprojekt?</h2><p>Senden Sie uns eine unverbindliche Anfrage oder rufen Sie direkt an. Wir besprechen Ihr Vorhaben persönlich.</p></div>
+        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestrasse 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Unverbindlich anfragen</a><a class="btn btn-light" href="tel:+4915155605621">Jetzt anrufen</a></div></div>
       </div>
     </section>
 </main>

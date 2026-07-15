@@ -3,7 +3,7 @@
       <div>
         <strong>Hysenaj Galabau</strong>
         <p>Professioneller Garten- und Landschaftsbau in Heilbronn und Umgebung. Persönlich beraten, sauber geplant und zuverlässig umgesetzt.</p>
-        <p>Mönchseestraße 24<br>74072 Heilbronn</p>
+        <p>Mönchseestrasse 24<br>74072 Heilbronn</p>
         <a class="back-top" href="#top">Nach oben ↑</a>
       </div>
       <div>
@@ -25,7 +25,7 @@
       </div>
       <div>
         <h2>Kontakt</h2>
-        <p>Mönchseestraße 24<br>74072 Heilbronn</p>
+        <p>Mönchseestrasse 24<br>74072 Heilbronn</p>
         <a href="tel:+4915155605621">+49 151 55605621</a>
         <a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a>
         <p>Region Heilbronn und Umgebung</p>

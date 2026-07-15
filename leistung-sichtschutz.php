@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Sichtschutz';
-$pageDescription = 'Stabile und optisch passende Lösungen für mehr Privatsphäre im Garten.';
+$pageDescription = 'Sichtschutzlösungen für Terrassen, Gartengrenzen und Sitzplätze mit passender Einbindung in die Außenanlage.';
 $activePage = 'leistungen';
 require __DIR__ . '/includes/header.php';
 ?>
@@ -11,12 +11,12 @@ require __DIR__ . '/includes/header.php';
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.php">Startseite</a><span>Sichtschutz</span></nav>
         <p class="eyebrow">Leistungsdetail</p>
         <h1>Sichtschutz</h1>
-        <p>Stabile und optisch passende Lösungen für mehr Privatsphäre im Garten.</p>
+        <p>Sichtschutzlösungen für Terrassen, Gartengrenzen und Sitzplätze mit passender Einbindung in die Außenanlage.</p>
       </div>
     </section>
     <section class="section">
       <div class="container detail-layout">
-        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Sichtschutz von Hysenaj Galabau</h2><p>Ein guter Sichtschutz schafft Ruhe, ohne den Garten einzuengen. Wir planen und setzen Lösungen um, die zur Fläche, zum Stil des Hauses und zur gewünschten Wirkung passen.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Sichtschutzbereiche planen</li><li>Zäune und Elemente setzen</li><li>Kombination mit Bepflanzung</li><li>Anschlüsse an Terrassen und Wege</li><li>Stabile Fundamente und saubere Linien</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Terrassen</li><li>Gartengrenzen</li><li>Sitzplätze</li><li>Vorgärten und Eingangsbereiche</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Mehr Privatsphäre</li><li>Passende Optik statt Fremdkörper</li><li>Fachgerechte Montage</li></ul></article>
+        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Sichtschutz von Hysenaj Galabau</h2><p>Ein Sichtschutz soll Privatsphäre schaffen und trotzdem zum Garten passen. Wir setzen Elemente, Zäune oder Kombinationen mit Pflanzung so, dass Terrassen und Sitzplätze geschützt und weiterhin freundlich wirken.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Sichtschutzbereiche planen</li><li>Zäune und Elemente setzen</li><li>Kombination mit Bepflanzung</li><li>Anschlüsse an Terrassen und Wege</li><li>Fundamente und Linien sauber ausführen</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Terrassen</li><li>Gartengrenzen</li><li>Sitzplätze</li><li>Vorgärten und Eingangsbereiche</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Mehr Privatsphäre</li><li>Schutz für Sitzbereiche</li><li>Gestaltung passend zum Grundstück</li></ul></article>
         <aside class="detail-contact"><h2>Projekt besprechen</h2><p>Wir beraten Sie persönlich in Heilbronn und Umgebung.</p><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><a class="btn btn-primary" href="kontakt.php">Anfrage senden</a></aside>
       </div>
     </section>
@@ -41,8 +41,8 @@ require __DIR__ . '/includes/header.php';
     <section class="section section-muted"><div class="container service-nav"><a href="leistung-pool-und-teichbau.php">← Pool- und Teichbau</a><a href="leistungen.php">Alle Leistungen</a><a href="leistung-abbrucharbeiten.php">Abbrucharbeiten →</a></div><div class="container related-services"><h2>Ähnliche Leistungen</h2><div><a href="leistung-abbrucharbeiten.php">Abbrucharbeiten</a><a href="leistung-gartengestaltung.php">Gartengestaltung</a><a href="leistung-pool-und-teichbau.php">Pool- und Teichbau</a></div></div></section>
     <section class="contact-cta">
       <div class="container contact-cta-grid">
-        <div><p class="eyebrow">Kostenlose Erstberatung</p><h2>Planen wir Ihr Gartenprojekt gemeinsam.</h2><p>Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns persönlich zurück und beraten Sie in Heilbronn und Umgebung.</p></div>
-        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestraße 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Kontaktformular öffnen</a><a class="btn btn-light" href="tel:+4915155605621">Direkt anrufen</a></div></div>
+        <div><p class="eyebrow">Kontakt</p><h2>Sie planen ein Gartenprojekt?</h2><p>Senden Sie uns eine unverbindliche Anfrage oder rufen Sie direkt an. Wir besprechen Ihr Vorhaben persönlich.</p></div>
+        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestrasse 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Unverbindlich anfragen</a><a class="btn btn-light" href="tel:+4915155605621">Jetzt anrufen</a></div></div>
       </div>
     </section>
 </main>

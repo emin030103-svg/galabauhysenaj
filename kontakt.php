@@ -69,7 +69,7 @@ require __DIR__ . '/includes/header.php';
           <h2>Direkter Kontakt</h2>
           <a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a>
           <a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a>
-          <p>Mönchseestraße 24<br>74072 Heilbronn</p>
+          <p>Mönchseestrasse 24<br>74072 Heilbronn</p>
           <p>Mo-Fr 07:00-17:00 Uhr<br>Sa 07:00-12:30 Uhr</p>
           <p>Nach Eingang Ihrer Anfrage melden wir uns persönlich zur Abstimmung des nächsten Schritts.</p>
         </aside>

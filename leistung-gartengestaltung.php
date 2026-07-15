@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Gartengestaltung';
-$pageDescription = 'Individuelle Gartenkonzepte mit klarer Struktur, passender Bepflanzung und hochwertiger Ausführung.';
+$pageDescription = 'Von der Aufteilung der Flächen bis zur passenden Bepflanzung gestalten wir Außenbereiche, die zu Grundstück, Haus und Nutzung passen.';
 $activePage = 'leistungen';
 require __DIR__ . '/includes/header.php';
 ?>
@@ -11,12 +11,12 @@ require __DIR__ . '/includes/header.php';
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.php">Startseite</a><span>Gartengestaltung</span></nav>
         <p class="eyebrow">Leistungsdetail</p>
         <h1>Gartengestaltung</h1>
-        <p>Individuelle Gartenkonzepte mit klarer Struktur, passender Bepflanzung und hochwertiger Ausführung.</p>
+        <p>Von der Aufteilung der Flächen bis zur passenden Bepflanzung gestalten wir Außenbereiche, die zu Grundstück, Haus und Nutzung passen.</p>
       </div>
     </section>
     <section class="section">
       <div class="container detail-layout">
-        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Gartengestaltung von Hysenaj Galabau</h2><p>Wir gestalten private Gärten und Außenbereiche so, dass sie zum Haus, zur Nutzung und zum gewünschten Pflegeaufwand passen. Von der ersten Idee bis zur fertigen Anlage achten wir auf sinnvolle Wege, stimmige Materialien und eine dauerhaft gepflegte Wirkung.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Gartenplanung und Flächenaufteilung</li><li>Pflanzbereiche und Beete anlegen</li><li>Wege, Übergänge und Einfassungen</li><li>Kombination aus Stein, Grün und Wasser</li><li>Neugestaltung vorhandener Gartenbereiche</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Privatgärten</li><li>Vorgärten</li><li>Außenbereiche am Haus</li><li>Umgestaltung älterer Anlagen</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Persönliche Beratung vor Ort</li><li>Stimmige Material- und Pflanzauswahl</li><li>Saubere Umsetzung aus einer Hand</li></ul></article>
+        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Gartengestaltung von Hysenaj Galabau</h2><p>Bei der Gartengestaltung verbindet Hysenaj Galabau Wege, Pflanzflächen, Sitzbereiche und Einfassungen zu einer nutzbaren Außenanlage. Die Planung orientiert sich am Grundstück, am Haus und daran, wie der Garten später genutzt und gepflegt werden soll.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Gartenbereiche aufteilen</li><li>Pflanzflächen und Beete anlegen</li><li>Wege und Übergänge gestalten</li><li>Stein- und Grünflächen kombinieren</li><li>Vorhandene Gartenbereiche erneuern</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Privatgärten</li><li>Vorgärten</li><li>Außenbereiche am Haus</li><li>Umgestaltung bestehender Anlagen</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Besser nutzbare Flächen</li><li>Bepflanzung passend zum Standort</li><li>Klare Struktur für Alltag und Pflege</li></ul></article>
         <aside class="detail-contact"><h2>Projekt besprechen</h2><p>Wir beraten Sie persönlich in Heilbronn und Umgebung.</p><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><a class="btn btn-primary" href="kontakt.php">Anfrage senden</a></aside>
       </div>
     </section>
@@ -41,8 +41,8 @@ require __DIR__ . '/includes/header.php';
     <section class="section section-muted"><div class="container service-nav"><a href="leistung-abbrucharbeiten.php">← Abbrucharbeiten</a><a href="leistungen.php">Alle Leistungen</a><a href="leistung-pflasterarbeiten.php">Pflasterarbeiten →</a></div><div class="container related-services"><h2>Ähnliche Leistungen</h2><div><a href="leistung-pflasterarbeiten.php">Pflasterarbeiten</a><a href="leistung-terrassen.php">Terrassen</a><a href="leistung-abbrucharbeiten.php">Abbrucharbeiten</a></div></div></section>
     <section class="contact-cta">
       <div class="container contact-cta-grid">
-        <div><p class="eyebrow">Kostenlose Erstberatung</p><h2>Planen wir Ihr Gartenprojekt gemeinsam.</h2><p>Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns persönlich zurück und beraten Sie in Heilbronn und Umgebung.</p></div>
-        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestraße 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Kontaktformular öffnen</a><a class="btn btn-light" href="tel:+4915155605621">Direkt anrufen</a></div></div>
+        <div><p class="eyebrow">Kontakt</p><h2>Sie planen ein Gartenprojekt?</h2><p>Senden Sie uns eine unverbindliche Anfrage oder rufen Sie direkt an. Wir besprechen Ihr Vorhaben persönlich.</p></div>
+        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestrasse 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Unverbindlich anfragen</a><a class="btn btn-light" href="tel:+4915155605621">Jetzt anrufen</a></div></div>
       </div>
     </section>
 </main>

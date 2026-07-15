@@ -106,7 +106,11 @@ document.querySelectorAll('.map-consent [data-load-map]').forEach((button) => {
 document.querySelectorAll('[data-static-form]').forEach((form) => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+    if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
     const preview = form.querySelector('[data-form-preview]');
     if (preview) preview.hidden = false;
+    if (form.dataset.staticForm === 'bewerbung') {
+      window.location.href = 'mailto:galabau.hysenaj@gmail.com?subject=Bewerbung%20bei%20Hysenaj%20Galabau';
+    }
   });
 });

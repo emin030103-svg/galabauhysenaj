@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Pflasterarbeiten';
-$pageDescription = 'Saubere Pflasterflächen für Einfahrten, Wege, Höfe und Terrassenflächen mit fachgerechtem Unterbau.';
+$pageDescription = 'Fachgerecht aufgebaute Pflasterflächen für Einfahrten, Wege, Höfe und Sitzbereiche.';
 $activePage = 'leistungen';
 require __DIR__ . '/includes/header.php';
 ?>
@@ -11,12 +11,12 @@ require __DIR__ . '/includes/header.php';
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.php">Startseite</a><span>Pflasterarbeiten</span></nav>
         <p class="eyebrow">Leistungsdetail</p>
         <h1>Pflasterarbeiten</h1>
-        <p>Saubere Pflasterflächen für Einfahrten, Wege, Höfe und Terrassenflächen mit fachgerechtem Unterbau.</p>
+        <p>Fachgerecht aufgebaute Pflasterflächen für Einfahrten, Wege, Höfe und Sitzbereiche.</p>
       </div>
     </section>
     <section class="section">
       <div class="container detail-layout">
-        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Pflasterarbeiten von Hysenaj Galabau</h2><p>Pflasterarbeiten brauchen eine stabile Grundlage, passende Entwässerung und sorgfältige Ausführung. Wir übernehmen Pflasterflächen rund ums Haus und achten auf belastbare Unterbauten, exakte Ränder und ein ruhiges Verlegebild.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Einfahrten</li><li>Gartenwege</li><li>Höfe</li><li>Terrassenflächen</li><li>Stellplätze</li><li>Randsteine und Einfassungen</li><li>Unterbau und Entwässerung</li><li>Natursteinpflaster und Betonpflaster</li><li>Reparaturen und Ausbesserungen</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Garagenzufahrten</li><li>Hauszugänge</li><li>Innenhöfe</li><li>Gartenwege</li><li>Sitzplätze</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Belastbare Flächen</li><li>Saubere Höhen und Abschlüsse</li><li>Langlebige Lösung mit passendem Material</li></ul></article>
+        <article class="detail-content"><a class="text-link" href="leistungen.php">← Zurück zur Leistungsübersicht</a><h2>Pflasterarbeiten von Hysenaj Galabau</h2><p>Pflasterflächen müssen Belastung, Gefälle und Entwässerung standhalten. Hysenaj Galabau bereitet den Unterbau vor, setzt Ränder sauber und verlegt Pflaster für Einfahrten, Gartenwege, Höfe, Stellplätze und Terrassenflächen.</p><div class="detail-columns"><div><h3>Diese Arbeiten bieten wir an</h3><ul class="check-list"><li>Einfahrten und Stellplätze</li><li>Gartenwege und Hauszugänge</li><li>Höfe und Sitzbereiche</li><li>Randsteine und Einfassungen</li><li>Unterbau und Entwässerung</li><li>Naturstein- und Betonpflaster</li><li>Reparaturen und Ausbesserungen</li></ul></div><div><h3>Typische Einsatzbereiche</h3><ul class="check-list"><li>Garagenzufahrten</li><li>Hauszugänge</li><li>Innenhöfe</li><li>Gartenwege</li><li>Sitzplätze</li></ul></div></div><h3>Ihre Vorteile</h3><ul class="benefit-list"><li>Tragfähiger Aufbau</li><li>Saubere Höhen und Anschlüsse</li><li>Flächen, die im Alltag gut funktionieren</li></ul></article>
         <aside class="detail-contact"><h2>Projekt besprechen</h2><p>Wir beraten Sie persönlich in Heilbronn und Umgebung.</p><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><a class="btn btn-primary" href="kontakt.php">Anfrage senden</a></aside>
       </div>
     </section>
@@ -41,8 +41,8 @@ require __DIR__ . '/includes/header.php';
     <section class="section section-muted"><div class="container service-nav"><a href="leistung-gartengestaltung.php">← Gartengestaltung</a><a href="leistungen.php">Alle Leistungen</a><a href="leistung-terrassen.php">Terrassen →</a></div><div class="container related-services"><h2>Ähnliche Leistungen</h2><div><a href="leistung-terrassen.php">Terrassen</a><a href="leistung-gartenpflege.php">Gartenpflege</a><a href="leistung-gartengestaltung.php">Gartengestaltung</a></div></div></section>
     <section class="contact-cta">
       <div class="container contact-cta-grid">
-        <div><p class="eyebrow">Kostenlose Erstberatung</p><h2>Planen wir Ihr Gartenprojekt gemeinsam.</h2><p>Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns persönlich zurück und beraten Sie in Heilbronn und Umgebung.</p></div>
-        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestraße 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Kontaktformular öffnen</a><a class="btn btn-light" href="tel:+4915155605621">Direkt anrufen</a></div></div>
+        <div><p class="eyebrow">Kontakt</p><h2>Sie planen ein Gartenprojekt?</h2><p>Senden Sie uns eine unverbindliche Anfrage oder rufen Sie direkt an. Wir besprechen Ihr Vorhaben persönlich.</p></div>
+        <div class="contact-card"><a class="contact-phone" href="tel:+4915155605621">+49 151 55605621</a><a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a><p>Mönchseestrasse 24<br>74072 Heilbronn</p><div class="contact-actions"><a class="btn btn-primary" href="kontakt.php">Unverbindlich anfragen</a><a class="btn btn-light" href="tel:+4915155605621">Jetzt anrufen</a></div></div>
       </div>
     </section>
 </main>
