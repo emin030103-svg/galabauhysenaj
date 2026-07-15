@@ -36,6 +36,7 @@ $navItems = [
         "url": "<?= e(url_for()) ?>",
         "email": "<?= e($company['email']) ?>",
         "telephone": "<?= e($company['phone_display']) ?>",
+        "logo": "<?= e(url_for('assets/images/logo-hysenaj-galabau.jpg')) ?>",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "<?= e($company['street']) ?>",
@@ -44,6 +45,7 @@ $navItems = [
             "addressCountry": "DE"
         },
         "areaServed": "Heilbronn und Umgebung",
+        "openingHours": ["Mo-Fr 07:00-17:00", "Sa 07:00-12:30"],
         "image": "<?= e(url_for('assets/images/pflasterarbeiten.jpg')) ?>"
     }
     </script>
