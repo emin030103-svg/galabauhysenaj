@@ -15,6 +15,101 @@
   {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Hysenaj Galabau","url":"https://emin030103-svg.github.io/galabauhysenaj/ueber-uns.html","foundingDate":"2009","telephone":"+49 151 55605621","email":"galabau.hysenaj@gmail.com","logo":"https://emin030103-svg.github.io/galabauhysenaj/assets/images/logo-hysenaj-galabau.jpg","image":"https://emin030103-svg.github.io/galabauhysenaj/assets/images/pflasterarbeiten.jpg","address":{"@type":"PostalAddress","streetAddress":"M\u00f6nchseestrasse 24","postalCode":"74072","addressLocality":"Heilbronn","addressCountry":"DE"},"areaServed":"Heilbronn und Umgebung","openingHours":["Mo-Fr 07:00-17:00","Sa 07:00-12:30"]}
   </script>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .site-footer.premium-footer {
+      background: #0b1f19;
+      color: rgba(255,255,255,.82);
+      padding-top: 38px;
+    }
+    .premium-footer .footer-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr .95fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .premium-footer .footer-brand-logo {
+      width: 152px;
+      max-width: 100%;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      background: #fff;
+      padding: 5px;
+    }
+    .premium-footer h2 {
+      margin: 0 0 12px;
+      color: #fff;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+    .premium-footer p {
+      margin: 0 0 10px;
+      font-size: 15px;
+      line-height: 1.55;
+      color: rgba(255,255,255,.74);
+    }
+    .premium-footer a {
+      display: block;
+      width: fit-content;
+      margin: 5px 0;
+      color: rgba(255,255,255,.88);
+      font-size: 15px;
+      line-height: 1.35;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+    .premium-footer a:hover,
+    .premium-footer a:focus-visible {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+    .premium-footer .footer-contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      margin-top: 10px;
+      padding: 9px 13px;
+      border: 1px solid rgba(210,170,98,.5);
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 850;
+    }
+    .premium-footer .footer-bottom {
+      margin-top: 30px;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .premium-footer .footer-bottom .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 14px;
+      color: rgba(255,255,255,.72);
+    }
+    .premium-footer .footer-bottom a {
+      display: inline;
+      margin: 0;
+      font-size: 14px;
+    }
+    @media (max-width: 920px) {
+      .premium-footer .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
+      .site-footer.premium-footer { padding-top: 30px; }
+      .premium-footer .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+      .premium-footer .footer-brand-logo { width: 136px; }
+      .premium-footer h2 { font-size: 16px; margin-bottom: 9px; }
+      .premium-footer p,
+      .premium-footer a { font-size: 15px; }
+      .premium-footer .footer-bottom { margin-top: 24px; }
+      .premium-footer .footer-bottom .container { gap: 8px 14px; }
+    }
+  </style>
 </head>
 <body id="top" data-page="ueber-uns">
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -98,45 +193,45 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer">
+  <footer class="site-footer premium-footer">
     <div class="container footer-grid">
       <div>
-        <strong>Hysenaj Galabau</strong>
-        <p>Professioneller Garten- und Landschaftsbau in Heilbronn und Umgebung. Persönlich beraten, sauber geplant und zuverlässig umgesetzt.</p>
-        <p>Mönchseestrasse 24<br>74072 Heilbronn</p>
-        <a class="back-top" href="#top">Nach oben ↑</a>
+        <picture><source srcset="assets/images/logo-hysenaj-galabau.webp" type="image/webp"><img class="footer-brand-logo" src="assets/images/logo-hysenaj-galabau.jpg" alt="Hysenaj Galabau Logo" width="630" height="166" loading="lazy"></picture>
+        <p>Hysenaj Galabau ist seit 2009 Ihr Ansprechpartner f&uuml;r Garten- und Landschaftsbau in Heilbronn und Umgebung.</p>
+        <a href="tel:+4915155605621">+49 151 55605621</a>
+        <a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <a href="index.html">Startseite</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="ueber-uns.html">&Uuml;ber uns</a>
+        <a href="galerie.html">Referenzen</a>
+        <a href="kontakt.html">Kontakt</a>
       </div>
       <div>
         <h2>Leistungen</h2>
         <a href="leistung-gartengestaltung.html">Gartengestaltung</a>
         <a href="leistung-pflasterarbeiten.html">Pflasterarbeiten</a>
-        <a href="leistung-terrassen.html">Terrassen</a>
+        <a href="leistung-terrassen.html">Terrassenbau</a>
         <a href="leistung-gartenpflege.html">Gartenpflege</a>
         <a href="leistung-natursteinmauern.html">Natursteinmauern</a>
       </div>
       <div>
-        <h2>Navigation</h2>
-        <a href="leistungen.html">Leistungen</a>
-        <a href="galerie.html">Referenzen</a>
-        <a href="ueber-uns.html">Über uns</a>
-        <a href="faq.html">FAQ</a>
-        <a href="bewerbung.html">Karriere</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
-      <div>
         <h2>Kontakt</h2>
-        <p>Mönchseestrasse 24<br>74072 Heilbronn</p>
         <a href="tel:+4915155605621">+49 151 55605621</a>
         <a href="mailto:galabau.hysenaj@gmail.com">galabau.hysenaj@gmail.com</a>
-        <p>Region Heilbronn und Umgebung</p>
+        <p>M&ouml;nchseestrasse 24<br>74072 Heilbronn</p>
         <p>Mo-Fr 07:00-17:00 Uhr<br>Sa 07:00-12:30 Uhr</p>
+        <a class="footer-contact-button" href="kontakt.html">Kontakt aufnehmen</a>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <span>© 2026 Hysenaj Galabau</span>
+        <span>&copy; 2026 Hysenaj Galabau</span>
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
+        <span>Alle Rechte vorbehalten</span>
       </div>
     </div>
   </footer>
