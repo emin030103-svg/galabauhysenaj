@@ -6,13 +6,13 @@ require __DIR__ . '/includes/header.php';
 ?>
 <main id="main">
     <section class="home-hero">
-      <div class="hero-media"><picture><source srcset="assets/images/pflasterarbeiten.webp" type="image/webp"><img src="assets/images/pflasterarbeiten.jpg" alt="Gepflegte Außenanlage von Hysenaj Galabau" width="1600" height="1200" fetchpriority="high"></picture></div>
+      <div class="hero-media"><picture><source srcset="assets/images/pflasterarbeiten.webp" type="image/webp"><img src="assets/images/pflasterarbeiten.jpg" alt="Hochwertig gestaltete Au&szlig;enanlage von Hysenaj Galabau" width="1600" height="1200" fetchpriority="high"></picture></div>
       <div class="container hero-panel">
         <p class="eyebrow">Garten- und Landschaftsbau in Heilbronn</p>
         <h1>Ihr Garten. Unsere Leidenschaft.</h1>
-        <p>Garten- und Landschaftsbau für Heilbronn und Umgebung – persönlich geplant und fachgerecht umgesetzt.</p>
+        <p>Professioneller Garten- und Landschaftsbau in Heilbronn und Umgebung &ndash; von der Planung bis zur fertigen Au&szlig;enanlage.</p>
         <div class="hero-actions"><a class="btn btn-primary" href="kontakt.php">Kostenloses Angebot anfragen</a><a class="btn btn-light" href="leistungen.php">Unsere Leistungen</a></div>
-        <div class="hero-trust" aria-label="Vertrauenselemente"><span>Seit 2009 für Sie im Einsatz</span><span>Persönliche Beratung vor Ort</span><span>Individuelle Lösungen für Ihre Außenanlage</span><span>Fachgerechte und saubere Ausführung</span></div>
+        <div class="hero-trust" aria-label="Vertrauenselemente"><span>Seit 2009 im Einsatz</span><span>Pers&ouml;nliche Beratung</span><span>Individuelle L&ouml;sungen</span><span>Fachgerechte Ausf&uuml;hrung</span></div>
       </div>
     </section>
     <section class="trust-band"><div class="container trust-grid"><article><span class="trust-icon">↟</span><strong>Seit 2009 für Sie im Einsatz</strong><span>Garten- und Landschaftsbau in Heilbronn und Umgebung</span></article><article><span class="trust-icon">✦</span><strong>Persönliche Beratung vor Ort</strong><span>Wünsche, Fläche und Ablauf werden direkt am Grundstück besprochen</span></article><article><span class="trust-icon">✓</span><strong>Individuelle Lösungen</strong><span>Gärten, Terrassen, Pflaster und Naturstein passend zur Nutzung</span></article><article><span class="trust-icon">●</span><strong>Fachgerechte Ausführung</strong><span>Saubere Arbeit von der Vorbereitung bis zur fertigen Außenanlage</span></article></div></section>
