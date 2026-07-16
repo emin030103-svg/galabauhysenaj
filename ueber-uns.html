@@ -109,6 +109,48 @@
       .premium-footer .footer-bottom { margin-top: 24px; }
       .premium-footer .footer-bottom .container { gap: 8px 14px; }
     }
+    .about-hero {
+      min-height: 520px;
+    }
+    .about-hero .hero-panel {
+      max-width: 780px;
+      padding-bottom: 72px;
+    }
+    .about-hero .hero-panel h1 {
+      max-width: 760px;
+      font-size: clamp(38px, 5.2vw, 64px);
+      line-height: 1.06;
+    }
+    .about-hero .hero-panel p:not(.eyebrow) {
+      max-width: 740px;
+      margin-top: 24px;
+      font-size: clamp(17px, 2vw, 20px);
+      line-height: 1.55;
+    }
+    @media (max-width: 620px) {
+      .about-hero {
+        min-height: 500px;
+      }
+      .about-hero .hero-panel {
+        max-width: calc(100% - 28px);
+        padding-top: 82px;
+        padding-bottom: 54px;
+      }
+      .about-hero .hero-panel h1 {
+        font-size: 38px;
+        line-height: 1.08;
+      }
+      .about-hero .hero-panel p:not(.eyebrow) {
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 1.5;
+      }
+    }
+    @media (max-width: 380px) {
+      .about-hero .hero-panel h1 {
+        font-size: 34px;
+      }
+    }
   </style>
 </head>
 <body id="top" data-page="ueber-uns">
@@ -136,8 +178,8 @@
       <div class="container hero-panel">
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Startseite</a><span>&Uuml;ber uns</span></nav>
         <p class="eyebrow">&Uuml;ber Hysenaj Galabau</p>
-        <h1>Seit 2009 Ihr zuverl&auml;ssiger Partner f&uuml;r Garten- und Landschaftsbau in Heilbronn und Umgebung.</h1>
-        <p>Seit unserer Gr&uuml;ndung im Jahr 2009 begleiten wir private und gewerbliche Kunden bei der Gestaltung, Erneuerung und Pflege hochwertiger Au&szlig;enanlagen. Mit Erfahrung, handwerklichem Know-how und pers&ouml;nlicher Beratung setzen wir Projekte zuverl&auml;ssig und fachgerecht um.</p>
+        <h1>Seit 2009 Garten- und Landschaftsbau mit Leidenschaft.</h1>
+        <p>Seit 2009 gestalten, erneuern und pflegen wir Au&szlig;enanlagen in Heilbronn und Umgebung. Von Pflasterfl&auml;chen und Terrassen bis zu Bepflanzung, Naturstein und Gartenpflege begleiten wir jedes Vorhaben mit pers&ouml;nlicher Beratung und sorgf&auml;ltiger handwerklicher Ausf&uuml;hrung.</p>
       </div>
     </section>
 
