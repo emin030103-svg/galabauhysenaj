@@ -1,3 +1,4 @@
+// Mobile navigation toggle
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.main-nav');
 
@@ -9,6 +10,7 @@ if (toggle && nav) {
   });
 }
 
+// Gallery category filter (e.g. "Terrassen", "Gartenpflege", ...)
 document.querySelectorAll('.gallery-system').forEach((gallery) => {
   const buttons = Array.from(gallery.querySelectorAll('[data-filter]'));
   const cards = Array.from(gallery.querySelectorAll('[data-gallery-card]'));
@@ -34,6 +36,7 @@ document.querySelectorAll('.gallery-system').forEach((gallery) => {
   });
 });
 
+// Lightbox for gallery images, aware of the currently active filter
 const allLightboxLinks = Array.from(document.querySelectorAll('[data-lightbox]'));
 if (allLightboxLinks.length) {
   let currentLinks = allLightboxLinks;
@@ -88,6 +91,7 @@ if (allLightboxLinks.length) {
   });
 }
 
+// Two-click map consent: the map iframe is only created after an explicit click
 document.querySelectorAll('.map-consent [data-load-map]').forEach((button) => {
   button.addEventListener('click', () => {
     const wrapper = button.closest('.map-consent');
@@ -103,6 +107,8 @@ document.querySelectorAll('.map-consent [data-load-map]').forEach((button) => {
   });
 });
 
+// Static-site fallback (docs/ has no PHP): show a confirmation and, for the
+// application form, open a pre-filled mailto: link instead of submitting.
 document.querySelectorAll('[data-static-form]').forEach((form) => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
