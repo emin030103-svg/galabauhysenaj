@@ -1,50 +1,63 @@
-# Hysenaj Galabau Webseite
+# Hysenaj Galabau – Firmenwebsite
 
-Vollständige lokale Neuumsetzung der Website für Hysenaj Galabau mit zwei Varianten:
+Website für den Garten- und Landschaftsbaubetrieb **Hysenaj Galabau** (Heilbronn), umgesetzt als Kundenprojekt.
 
-- `docs/`: statische HTML-Version für GitHub Pages
-- Hauptverzeichnis: PHP-Version für IONOS-Webhosting
+> **Hinweis:** Dies ist eine echte Kundenwebsite. Firmenname, Leistungen, Texte und Bilder gehören dem Betreiber. Der Quellcode liegt hier als Arbeitsprobe im Portfolio; Inhalte sind nicht zur freien Weiterverwendung gedacht (siehe [Lizenz](#lizenz)).
+
+## Screenshots
+
+| Startseite | Leistungen |
+| --- | --- |
+| _[Platzhalter – startseite.png]_ | _[Platzhalter – leistungen.png]_ |
+
+## Verwendete Technologien
+
+- HTML5, CSS3 (ein zentrales Stylesheet, kein Framework)
+- Vanilla JavaScript (Navigation, Galerie-Filter, Lightbox)
+- PHP 8 (Formularverarbeitung, CSRF-Schutz, Security-Header) für die produktive Version
+- Responsive Design, `<picture>`/WebP für Bilder
 
 ## Projektstruktur
 
-- `docs/index.html` ist die Startseite für GitHub Pages.
-- `docs/*.html` sind die statischen Unterseiten.
-- `index.php`, `leistungen.php`, `ueber-uns.php`, `galerie.php`, `faq.php`, `kontakt.php`, `bewerbung.php`, `impressum.php`, `datenschutz.php` bilden die PHP-Version.
-- `includes/` enthält Header, Footer, Daten und Funktionen.
-- `config/config.example.php` enthält die zentrale Formular-Konfiguration.
-- `assets/css/styles.css` ist die zentrale CSS-Datei.
-- `assets/js/main.js` enthält Navigation, Galerie, Lightbox, Karten-Zustimmung und statische Formularhinweise.
+Das Projekt gibt es in zwei Varianten für zwei unterschiedliche Hosting-Ziele:
 
-## Lokales Testen
+```
+├── docs/               # Statische HTML-Version für GitHub Pages (Demo/Vorschau)
+│   ├── *.html
+│   └── assets/
+├── *.php               # PHP-Version für den produktiven Betrieb (IONOS-Webhosting)
+├── includes/           # Header, Footer, Navigation, gemeinsame PHP-Funktionen
+├── config/             # config.example.php als Vorlage; config.php liegt nur lokal/auf dem Server
+└── assets/             # CSS, JS und Bilder für die PHP-Version
+```
 
-Statisch: `docs/index.html` im Browser öffnen oder im Projektordner `python -m http.server 4177` starten.
+Beide Varianten zeigen dieselben Inhalte, sind aber unabhängig voneinander lauffähig: `docs/` ist rein statisch, die PHP-Version verarbeitet zusätzlich das Kontaktformular serverseitig.
 
-PHP: PHP 8.2 oder neuer verwenden und im Projektordner `php -S localhost:8080` starten.
+## Lokale Nutzung
 
-## GitHub Pages
+Statische Version:
+```bash
+cd docs
+python -m http.server 4177
+```
 
-GitHub Pages auf Branch `main` und Ordner `/docs` stellen. Die Datei `docs/.nojekyll` ist vorhanden. Innerhalb der statischen Version zeigen interne Links auf `.html`-Dateien und verwenden relative Pfade.
+PHP-Version (benötigt PHP 8.2+):
+```bash
+php -S localhost:8080
+```
+Vor dem ersten Start `config/config.example.php` nach `config/config.php` kopieren und bei Bedarf anpassen.
 
-## IONOS
+## Deployment
 
-Für IONOS die PHP-Dateien im Hauptverzeichnis hochladen. `config/config.example.php` nach Bedarf als Vorlage für `config/config.php` verwenden. Empfängeradresse: `galabau.hysenaj@gmail.com`.
+- **GitHub Pages:** Branch `main`, Ordner `/docs`.
+- **Produktivbetrieb:** PHP-Dateien im Hauptverzeichnis, gehostet bei IONOS.
 
-## Übernommene Inhalte
+## Sicherheit
 
-Übernommen beziehungsweise inhaltlich modernisiert wurden Firmenname, Inhaber Arben Hysenaj, Anschrift Mönchseestrasse 24, 74072 Heilbronn, Telefonnummern, E-Mail-Adresse, Öffnungszeiten, Gründungsjahr 2009, Leistungen, FAQ-Grundinhalte, Bewerbungsformularfelder, Impressumsdaten und vorhandene lokale Unternehmensbilder.
+- Security-Header (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) in `includes/functions.php` und `.htaccess`.
+- CSRF-Token für das Kontaktformular.
+- `config/config.php` ist über `.gitignore` von der Versionierung ausgeschlossen und enthält keine Zugangsdaten, nur die Empfänger-Mailadresse des Formulars.
 
-## Bilder
+## Lizenz
 
-Verwendet werden ausschließlich die lokal vorhandenen Bilder unter `assets/images/` inklusive WebP-Versionen. Keine dauerhaften Wix-Hotlinks sind eingebunden. Weitere nicht eindeutig als Unternehmensreferenzen nutzbare Stock-/Wix-Kontextbilder wurden nicht als Referenzen übernommen.
-
-## Sprachliche und technische Änderungen
-
-Texte wurden professioneller formuliert, Tippfehler korrigiert und in eine einheitliche Sie-Ansprache gebracht. Die Website nutzt semantisches HTML, Vanilla JavaScript, ein zentrales CSS-System, responsive Navigation, Lightbox, Galerie-Filter, statische Formularhinweise und PHP-Formularverarbeitung.
-
-## Rechtliche Hinweise
-
-Impressum und Datenschutzerklärung wurden aus den vorhandenen Angaben abgeleitet und an die neue technische Umsetzung angepasst. Vor Veröffentlichung müssen beide Texte fachlich/rechtlich durch den Betreiber geprüft werden.
-
-## Externe Dienste
-
-Keine Analytics- oder Tracking-Dienste. Die Kontaktseite nutzt eine Zwei-Klick-Kartenlösung: externe Karteninhalte werden erst nach Klick geladen. PHP-Sessions dienen dem CSRF-Schutz.
+Kein Open-Source-Projekt. Der Quellcode dient als Arbeitsprobe im Portfolio; Inhalte, Bilder und Markenzeichen gehören dem Betreiber (Hysenaj Galabau).
