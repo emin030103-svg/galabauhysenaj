@@ -49,8 +49,8 @@ Vor dem ersten Start `config/config.example.php` nach `config/config.php` kopier
 
 ## Deployment
 
-- **GitHub Pages:** Branch `main`, Ordner `/docs`.
-- **Produktivbetrieb:** PHP-Dateien im Hauptverzeichnis, gehostet bei IONOS.
+- **GitHub Pages:** Branch `main`, Ordner `/docs`. Kein eigenes `robots.txt`/`sitemap.xml` für diese Vorschau; Canonical-Tags in `docs/*.html` zeigen konsequent auf `emin030103-svg.github.io/galabauhysenaj/`.
+- **Produktivbetrieb:** PHP-Dateien im Hauptverzeichnis, gehostet bei IONOS unter `www.galabau-hysenaj.de`. Die Root-Dateien `robots.txt` und `sitemap.xml` gehören zu diesem Ziel und verwenden konsistent diese Domain (identisch mit den von `includes/header.php` erzeugten Canonical-Tags).
 
 ## Sicherheit
 
